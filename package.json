@@ -1,0 +1,37 @@
+{
+  "name": "sockjs-stream",
+  "version": "0.1.0",
+  "description": "A streaming API for sockjs",
+  "keywords": [],
+  "author": "Raynos <raynos2@gmail.com>",
+  "repository": "git://github.com/Raynos/sockjs-stream.git",
+  "main": "index",
+  "homepage": "https://github.com/Raynos/sockjs-stream",
+  "contributors": [
+    {
+      "name": "Jake Verbaten"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Raynos/sockjs-stream/issues",
+    "email": "raynos2@gmail.com"
+  },
+  "browserify": "browser",
+  "dependencies": {
+    "data-channel": "~0.1.1",
+    "sockjs-client": "git://github.com/substack/sockjs-client.git#browserify-npm",
+    "ws": "~0.4.22"
+  },
+  "devDependencies": {
+    "tap": "~0.3.1"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/Raynos/sockjs-stream/raw/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "test": "tap --stderr --tap ./test"
+  }
+}
