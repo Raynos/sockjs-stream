@@ -11,7 +11,7 @@ function Stream(uri) {
         uri = "ws://" + uri
     }
 
-    var ws = new WebSocket(uri + "/echo/websocket")
+    var ws = new WebSocket(uri + "/websocket")
 
     return DataChannel(ws)
 }
