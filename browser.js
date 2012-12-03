@@ -5,6 +5,9 @@ var DataChannel = require('data-channel')
 
 module.exports = Stream
 
-function Stream(uri) {
-    return DataChannel(sockjs(normalizeUri(uri || "/sock")))
+function Stream(uri, options) {
+    var sock = sockjs(normalizeUri(uri || "/sock")
+        , null, options || {})
+
+    return DataChannel(sock)
 }
