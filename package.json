@@ -18,7 +18,7 @@
   },
   "browserify": "browser",
   "dependencies": {
-    "data-channel": "~0.1.1",
+    "data-channel": "~0.1.2",
     "sockjs-client": "git://github.com/substack/sockjs-client.git#browserify-npm",
     "ws": "~0.4.22"
   },
